@@ -20,6 +20,7 @@ func main() {
 	defer db.Close()
 
 	//Checking for connection:
+	//sql.Open doesn't give an error if the machine is not reachable. Hence it is necessary to Ping.
 	err = db.Ping()
 	if err != nil {
 		fmt.Println(err.Error())
