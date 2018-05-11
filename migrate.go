@@ -3,10 +3,6 @@ package main
 import (
 	"fmt"
 	"database/sql"
-	// "bytes"
-	// "net/http"
-
-	// "github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
 )
 
